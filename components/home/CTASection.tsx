@@ -9,25 +9,15 @@ import { ArrowRight, Phone, Mail, MapPin, Send } from "lucide-react";
 export default function CTASection() {
   return (
     <section className="relative bg-gray-50 py-24 overflow-hidden">
-      {/* Animated bg rings */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-        {[...Array(4)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute rounded-full border border-blue-500/30"
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1 + i * 0.3, opacity: 1 - i * 0.22 }}
-            transition={{
-              duration: 3,
-              delay: i * 0.5,
-              repeat: Infinity,
-              repeatType: "reverse",
-              ease: "easeInOut",
-            }}
-            style={{ width: 300 + i * 180, height: 300 + i * 180 }}
-          />
-        ))}
-      </div>
+     
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.04]"
+        style={{
+          backgroundImage:
+            "linear-gradient(#0000ff 1px, transparent 1px), linear-gradient(90deg, #0000ff 1px, transparent 1px)",
+          backgroundSize: "60px 60px",
+        }}
+      />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

@@ -94,7 +94,7 @@ export default function ProductsSection() {
                   <h3 className="text-gray-700 text-lg font-semibold md:text-2xl">{f.name}</h3>
                   <p className="text-gray-500 text-base pb-2 md:text-lg">{f.description}</p>
                   <Link href={"/contact"} >
-                    <Button className="py-2 px-31 md:px-35 bg-blue-500 mb-5">Request Quote</Button>
+                    <Button className="py-2 px-26 md:px-35 bg-blue-500 mb-5">Request Quote</Button>
                   </Link>
                 </div>
               </div>
